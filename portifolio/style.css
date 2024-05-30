@@ -1,0 +1,124 @@
+html{
+    border: 6px double black;
+}
+body{
+    /*background-color: rgb(188, 240, 154); */
+    /*background-color: rgb(111, 158, 82); */
+    background-color: rgb(200, 197, 206);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center; 
+    h2{
+        
+        width: 100%;
+        background-color: aliceblue;
+        border: 2px solid black;
+
+    }
+}
+
+.wrapper > *{
+    padding: 30px;
+    margin: 10px;   
+    flex: 1 100%;
+    border-radius: 5px;
+    font-size: 1,5vw;
+}
+
+
+
+.main{
+    padding-left: 5vh;
+    text-align: left;
+    /*    background: deepskyblue; */
+    background: rgb(241, 228, 239);
+    height: 100%;
+    font-size: 24px;
+    border: 2px solid black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
+}
+
+.aside{
+    background: rgb(255, 255, 255); 
+    height: 100%;
+    border: 2px solid black;
+
+}
+
+.barra{
+    width: 100%;
+    height: 20px;
+    background-color: rgb(216, 216, 216);
+    border: 2px solid black;
+}
+
+.barra div{
+    margin-top: -2px;
+    margin-left: -2px;
+    height: 20px;
+    background-color: rgb(60, 64, 68);
+    border: 2px solid black;
+}
+
+img{
+    width: 70%;
+    height: auto;
+    border-radius: 15%;
+    border: 5px solid black;
+    border-style: double;
+
+}
+
+.linha,
+.linha2{
+    height: 1px;
+    width: 100%;
+    border-top: 0.2vh solid black;
+
+}
+
+.linha{
+    display: flex;
+    margin-left: -2vh;
+    justify-content: center;
+
+}
+
+.linha2{
+    margin-top: 1vh;
+    height: 1px;
+    width: 90%;
+    border-top: 0.2vh solid black;
+}
+
+@media all and (min-width: 770px){
+    
+    .aside{
+        order: 1;
+        flex: 2;
+    }
+    .main{
+        flex:3;
+        order:2;
+    }
+}
+
+@media all and (max-width: 770px){
+    
+    .aside{
+        order: 1;
+        flex: 2;
+    }
+    .main{
+        flex:3;
+        order:2;
+    }
+}
+
+
+
